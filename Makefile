@@ -7,5 +7,8 @@ one: clean one.cpp
 two: clean two.cpp
 	g++ -pthread -o out two.cpp && ./out
 
+three: clean three.cpp
+	g++ -pthread -o out three.cpp && ./out
+
 clean:
 	rm -rf *o out
